@@ -1,0 +1,28 @@
+@use '../styles/mixins.scss' as mix;
+
+.form {
+    width: 500px;
+
+    &__header {
+        margin: 0 0 10px 0;
+    }
+
+    &__group {
+        @include mix.flex-center(row, space-between);
+        margin: 10px;
+    }
+
+    .react-tel-input {
+        width: auto;
+        .form-control {
+            width: 180px;
+        }
+    }
+    .error-message {
+        color: red;
+    }
+
+}
+
+
+

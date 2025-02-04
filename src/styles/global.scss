@@ -1,0 +1,21 @@
+@use './mixins.scss' as mix;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial, sans-serif';
+    font-size: 16px;
+    background-color: #f5f5f5;
+    color: #333;   
+}
+h1 {
+    margin-bottom: 50px;
+}
+
+.container {
+    @include mix.flex-center(column);
+    
+    height: 800px;
+
+    margin: 0 200px;
+}
